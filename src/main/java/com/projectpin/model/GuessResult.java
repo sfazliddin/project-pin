@@ -12,6 +12,7 @@ public class GuessResult {
         this.bulls = bulls;
         this.cows = cows;
     }
+
     public boolean isWin() {
         return bulls == 4;
     }
@@ -21,11 +22,9 @@ public class GuessResult {
     }
 
 
-
     public int getBulls() {
         return bulls;
     }
-
 
 
     public int getCows() {
@@ -33,9 +32,8 @@ public class GuessResult {
     }
 
 
-
     @Override
     public String toString() {
-        return guess+" -> Bulls: "+bulls+", Cows: "+cows;
+        return guess + " -> Bulls: " + bulls + ", Cows: " + cows;
     }
 }

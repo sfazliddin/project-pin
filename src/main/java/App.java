@@ -3,8 +3,8 @@ import com.projectpin.service.Game;
 
 public class App {
     public static void main(String[] args) {
-        Game game=new Game();
-        game.play();
+//        Game game = new Game();
+//        game.play();
 //        for (int i=0;i<10;i++) {
 //            System.out.println(NumberGenerator.generateNumber());
 //        }

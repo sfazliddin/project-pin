@@ -4,11 +4,8 @@ import com.projectpin.model.GuessResult;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Scanner;
+
 import static com.projectpin.service.MatchingEngine.evaluate;
-import static com.projectpin.service.NumberGenerator.generateNumber;
-
-
 
 
 public class Game {
@@ -26,29 +23,29 @@ public class Game {
 
     // TODO: Implement these methods
     public GuessResult makeGuess(String guess) {
-        if(isGameOver){
+        if (isGameOver) {
             throw new IllegalStateException("Game is already won!");
         }
 
         // Validate guess
-        if(!PinValidator.isValid(guess)){
+        if (!PinValidator.isValid(guess)) {
             throw new IllegalArgumentException("Invalid guess format!!");
         }
 
         // Evaluate guess
-        GuessResult result=evaluate(numberToGuess,guess);
+        GuessResult result = evaluate(numberToGuess, guess);
         // Store result in guessHistory
         guessHistory.add(result);
         // Increment attempts
         guessCounter++;
         // Update isWon if result.isWin()
-        isGameOver=result.isWin();
+        isGameOver = result.isWin();
         // Return result
         return result;
     }
 
-    public boolean isWon(String guess) {
-    return isGameOver;
+    public boolean isWon() {
+        return isGameOver;
         // return isWon;
     }
 
