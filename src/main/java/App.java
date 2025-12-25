@@ -1,11 +1,4 @@
-import com.projectpin.console.Game;
-import com.projectpin.console.GuessValidator;
-import com.projectpin.console.MatchingEngine;
-import com.projectpin.console.NumberGenerator;
-
-import java.util.Scanner;
-
-import static com.projectpin.console.MatchingEngine.evaluate;
+import com.projectpin.service.Game;
 
 
 public class App {

@@ -1,4 +1,4 @@
-package com.projectpin.console;
+package com.projectpin.model;
 
 public class GuessResult {
 

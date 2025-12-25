@@ -1,4 +1,6 @@
-package com.projectpin.console;
+package com.projectpin.service;
+
+import com.projectpin.model.GuessResult;
 
 public class MatchingEngine {
     public static GuessResult evaluate(String target, String guess){

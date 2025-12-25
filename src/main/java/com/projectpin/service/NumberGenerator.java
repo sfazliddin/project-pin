@@ -1,4 +1,4 @@
-package com.projectpin.console;
+package com.projectpin.service;
 
 import java.util.ArrayList;
 import java.util.Arrays;
